@@ -1,0 +1,35 @@
+print("            Calculator Program      ")
+print("         ---------------------------")
+print()
+print ("  This simple program will do simple calculations for you   ")
+print();print()
+print ("  ADD (A),   MULTIPLY (M),   SUBTRACT (S),   DIVIDE (D)")
+print();print()
+while True:
+ VAR_1 = input("    WHAT DO YOU WANT TO DO .....")
+ if VAR_1.upper() == "A":
+    VAR_2 = input("   Enter 1st No   :  " )
+    VAR_3 = input("   Enter 2nd No   :  " )
+    print()
+    VARTOTAL = int(VAR_2) + int(VAR_3)
+    print ("TOTAL " + str(VAR_2)+ "+" + str(VAR_3)+" ="+ str(VARTOTAL))
+ elif VAR_1.upper() == "M":
+    VAR_2 = input("   Enter 1st No   :  " )
+    VAR_3 = input("   Enter 2nd No   :  " )
+    print()
+    VARTOTAL = int(VAR_2) * int(VAR_3)
+    print ("TOTAL " + str(VAR_2)+ "x" + str(VAR_3)+" ="+ str(VARTOTAL))
+ elif VAR_1.upper() == "S":
+    VAR_2 = input("   Enter 1st No   :  " )
+    VAR_3 = input("   Enter 2nd No   :  " )
+    print()
+    VARTOTAL = int(VAR_2) - int(VAR_3)
+    print ("TOTAL " + str(VAR_2)+ "-" + str(VAR_3)+" ="+ str(VARTOTAL))
+ elif VAR_1.upper() == "D":
+    VAR_2 = input("   Enter 1st No   :  " )
+    VAR_3 = input("   Enter 2nd No   :  " )
+    print()
+    VARTOTAL = int(VAR_2) / int(VAR_3)
+    print ("TOTAL " + str(VAR_2)+ "/" + str(VAR_3)+" ="+ str(VARTOTAL))
+ else:
+    input("invalid selection...press any key to continue....")
